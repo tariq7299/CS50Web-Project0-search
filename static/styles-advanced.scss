@@ -33,16 +33,26 @@ body, html {
   // display: inline-block;
 }
 
+
 .nav-brand img {
   min-width: 50px;
   height: auto;
   width: 100%;
   // width: 14%;
 }
+
 .navbar a:hover {
   text-decoration: underline;
 }
 
+.navbar .page-title {
+    float: left;
+    width: 100%;
+    padding: 30px 0 25px 80px;
+    color: #d93025;
+    font-size: 25px;
+  }
+  
 .parent-container {
   padding-top: 150px;
   width: 100%;
