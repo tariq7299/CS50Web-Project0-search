@@ -1,5 +1,6 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: #202124;
+$text-color: #f2f2f2;
 
 body, html {
   height: 100%;
@@ -10,18 +11,24 @@ body, html {
   background-color: $primary-color;
   
 }
+
   
 .navbar {
   overflow: hidden;
   background-color: $primary-color;
 }
 
-.navbar a {
-  // display: block;
-  color: #f2f2f2;
-  padding: 25px 20px;
-  text-decoration: none;
+.navbar {
+  a {
+    color: $text-color;
+    padding: 25px 20px;
+    text-decoration: none;
+  }
 }
+
+// .navbar .advanced-search-tap, .navbar .images-tap{
+//   float: right;
+// }
 
 .navbar .advanced-search-tap, .navbar .images-tap{
   float: right;
@@ -52,7 +59,7 @@ body, html {
   align-items: center;
 }
 
-.search-aria {
+.search-aria-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +70,7 @@ body, html {
 
 }
 
-.Google-logo {
+.Google-logo-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,13 +81,13 @@ body, html {
   padding-bottom: 15px;
 }
 
-.Google-logo img {
+.Google-logo-wrapper img {
   min-width: 250px;
   height: auto; /* Maintain the image's aspect ratio */
   width: 52%; /* Make the image fill the container width */
 }
 
-.form {
+form {
   width: 100%;
   display: flex;
   justify-content: center;

@@ -10,33 +10,26 @@
 
     <body>
         
-        <!--This nav bar will hold "images", "advanced search" -->
+        <!--This nav bar will hold "images", "advanced search" links/taps -->
         <div class="navbar">
-            <a href="#news" class="advanced-search-tap">Advanced Search</a>
+            <a href="./advanced-search.html" class="advanced-search-tap">Advanced Search</a>
             <a href="./google-img.html" class="images-tap">Images</a>
         </div>
 
         <div class="parent-container">
-            <div class="search-aria">
-    
-                <div class="Google-logo">
+            <div class="search-aria-wrapper">
+                <div class="Google-logo-wrapper">
                     <img src="./static/google-logo.svg" alt="Google Logo">
                 </div>
-    
-                    <form action="https://www.google.com/search" class="form">
-
+                    <form action="https://www.google.com/search">
                         <div class="search-field-wrapper">
                             <input type="text" name="q" placeholder="Type something" id="search-field">
                         </div>
-
                         <div class="search-buttons-wrapper">
                             <input type="submit" value="Google Search" id="google-search-button">
-                            <!-- <input type="submit" value="I am Feeling Lucky" id="feelingLucky-search-button"> -->
                             <input value="I'm Feeling Lucky" name="btnI" type="submit" data-ved="0ahUKEwiZv8XcpseCAxU6X_EDHYC2BNwQ19QECBM">
                         </div>
-                        
                     </form>
-    
             </div>
         </div>
 
