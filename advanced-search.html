@@ -12,28 +12,31 @@
         
         <!--This nav bar will hold "images", "advanced search" -->
         <div class="navbar">
-            <a href="#news" class="advanced-search-tap">Advanced Search</a>
             <a href="./google-img.html" class="images-tap">Images</a>
+            <a href="./index.html" class="advanced-search-tap">Search</a>
             <a href="./index.html" class="nav-brand"><img src="./static/google-logo.svg" alt="Google Logo"></a>
             <label class="page-title">Advanced Search</label>
         </div>
 
         <div class="parent-container">
-            <form action="https://www.google.com/search">
+            <form action="https://www.google.com/search" name="f">
                 <div class="section1-wrapper form-section">
                     <h3 class="item1">Find pages with...</h3><h4 class="item2">To do this in the search box.</h4>
 
-                    <p class="item3">all these words:</p><input type="text" class="item4"><p class="item5">Type the important words: tri-colour rat terrier</p>
-                    <p class="item3">this exact word or phrase:</p><input type="text" class="item4"><p class="item5">Put exact words in quotes: "rat terrier"</p>
-                    <p class="item6">any of these words:</p><input type="text" class="item7"><p class="item8">Type OR between all the words you want: miniature OR standard</p>
-                    <p class="item9">none of these words:</p><input type="text" class="item10"><p class="item11">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</p>
-                    <p class="item12">numbers ranging from:</p><input type="text" class="item13"><p class="item14">Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</p>
-                    <p class="item15">all these words:</p><div class="item16"><input type="text" ><p>to</p><input type="text"></div><p class="item17">all these words:</p>
+                    <p class="item3">all these words:</p><input type="text" class="item4" name="as_q"><p class="item5" >Type the important words: tri-colour rat terrier</p>
+                    <p class="item3">this exact word or phrase:</p><input type="text" class="item4" name="as_epq" ><p class="item5">Put exact words in quotes: "rat terrier"</p>
+                    <p class="item6">any of these words:</p><input type="text" class="item7" name="as_oq" value><p class="item8">Type OR between all the words you want: miniature OR standard</p>
+                    <p class="item9">none of these words:</p><input type="text" class="item10" name="as_eq"><p class="item11">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</p>
+                    <p class="item15">numbers ranging from:</p><div class="item16"><input type="text" name="as_nlo"><p>to</p><input type="text" name="as_nhi"></div><p class="item17">Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</p>
+
+                    <div><input value="Advanced Search" type="submit"></div> 
+
                 </div>
-                <div class="section2-wrapper form-section">
+                <!-- <div class="section2-wrapper form-section">
                     <h3 class="item1">Then narrow your results<br>by...</h3>
 
-                    <p class="item3">language:</p><select name="languages">
+                    <p class="item3">language:</p>
+                    <input id="lr_input" name="lr" value="lang_hu" type="hidden"><select name="languages">
                         <option value="english">English</option>
                         <option value="mandarin_chinese">Mandarin Chinese</option>
                         <option value="hindi">Hindi</option>
@@ -46,7 +49,7 @@
                         <option value="indonesian">Indonesian</option>
                     </select><p class="item4">Find pages in the language that you select.</p>
 
-                    <p class="item5">region:</p><select name="countries">
+                    <p class="item5">region:</p><input id="cr_input" name="cr" value="countryFR" type="hidden"><select name="countries">
                         <option value="afghanistan">Afghanistan</option>
                         <option value="albania">Albania</option>
                         <option value="algeria">Algeria</option>
@@ -226,10 +229,7 @@
                         <option value="free to use or share">free to use or share</option>
                     </select><p class="item14">Find pages that you are free to use yourself.
                     </p>
-
-                    <div><input type="submit" value="Advanced Search"></div> 
-
-                </div>
+                </div> -->
             </form>
         </div>
     </body>
