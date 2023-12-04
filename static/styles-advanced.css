@@ -106,7 +106,7 @@ input[type=text] {
 .section1-wrapper .item16 input {
   flex-grow: 1;
 }
-.section1-wrapper .item16 p {
+.section1-wrapper .item16 label {
   padding: 10px;
   display: inline;
 }

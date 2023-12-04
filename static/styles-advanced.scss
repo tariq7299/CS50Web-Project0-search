@@ -110,12 +110,12 @@ input[type="text"] {
     flex-direction: row;
     align-items: center;
 
-    input{
+    input {
       flex-grow: 1;
       // width: 100%;
     }
     
-    p{
+    label {
       padding: 10px;
       display: inline;
     }
